@@ -14,18 +14,16 @@
                     <h1><img src="images/profile.png" class="logo" alt="Profile Photo">Allan Nabule</h1>
                 </header>
                 <nav>
-                    <div>
-                        <button id="hamburger" class="hamburger" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
-                    </div>
-                    <div class="nav-links" id="main-nav">
+                    
+                    <button id="hamburger" class="hamburger" aria-controls="main-nav" aria-expanded="false">&#9776;</button>  
+                    <nav class="nav-links" id="main-nav">
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Projects</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
-                    </div>
-                    
+                    </nav>
                 </nav>
             </div>
             <div class="hero-content hero">
@@ -39,6 +37,50 @@
                 <img src="images/profile.png" alt="My Photo" class="profile-photo">
                 <p>I am Allan Nabule, a passionate backend developer with expertise in Python and Django. I enjoy building efficient and scalable web applications that solve real-world problems. With a strong focus on clean code and best practices, I strive to deliver high-quality solutions. Am also learning React with ALX Africa so that I can become a fullstack developer</p>
 
+            </div>
+            <div class="projects">
+                <h2 id="projects-title">My Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <img src="images/Screenshot 2025-12-22 110645.png" class="project-image" alt="Money Mates Tracker">
+                        <h3>Money Mates Tracker</h3>
+                        <p>A web application that allows users to track their daily contributions and alerts them when they have not yet contributed.</p>
+                        <a href="https://notifier-dpvz.onrender.com/" class="project-link" target="_blank" >View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/Screenshot 2025-12-22 112557.png" class="project-image" alt="E-commerce API">
+                        <h3>E-commerce API</h3>
+                        <p>An e-commerce API built with Django, featuring user authentication and payment integration. It also has a database of products and a cart system.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/WhatsApp Image 2025-12-22 at 11.36.57 AM.jpeg" class="project-image" alt="Blog API Project Screenshot" class="project-image">
+                        <h3>Blog API</h3>
+                        <p>A RESTful API for a blogging platform, enabling CRUD operations for posts and comments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <div class="mail-form">
+                    <form action="mailto:nabuleallan1@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Send">
+                    </form>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/Nebula077" target="_blank"><img src="images/download (22).png" alt="GitHub" class="logos"></a>
+                    <a href="https://www.linkedin.com/in/allan-nabule-540638292/" target="_blank"><img src="images/download (21).png" alt="LinkedIn" class="logos"></a>
+                    <a href="https://twitter.com/nabule_allan" target="_blank"><img src="images/download (20).png" alt="Twitter" class="logos"></a>
+                    <a href="https://www.instagram.com/allannabule/" target="_blank"><img src="images/Screenshot 2025-12-22 123518.png" alt="Instagram" class="logos"></a>
+                </div>
             </div>
     </div>
 

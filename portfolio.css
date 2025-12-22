@@ -39,6 +39,14 @@ body {
     margin-left: 0;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .hero {
     background-image: url('images/global-connection-and-the-internet-network-modernization-in-smart-city-ai-cloud-internet-background-free-video.jpg');
     padding: 4rem 2rem;
@@ -85,6 +93,33 @@ body {
     .stats2 { flex: 1 1 100%; max-width: 80%; height: 160px; align-items: center; margin-left: auto; margin-right: auto; }
     .stats2 h2 { top: 30%; font-size: 1.2rem; }
     .stats2 p { top: 62%; font-size: 0.85rem; }
+    .hamburger { display: flex;  }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        right: 16px;
+        background: rgba(0,0,0,0.85);
+        padding: 12px 14px;
+        border-radius: 8px;
+        z-index: 999;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-end;
+        margin: 0;
+    }
+
+    /* When JS toggles the active class we show the menu as a column */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
 }
 
 .nav-links ul {
@@ -113,4 +148,153 @@ body {
 .nav-links ul li a:hover {
     text-decoration: none;
     color: #FF6565;
+}
+
+.projects {
+    background-color: #f1f1f1;
+    padding: 4rem 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-list {
+    flex: 1;
+    flex-direction: row;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: flex-start;
+
+}
+
+/*.project-image {
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}*/
+
+.project-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    border: #333 solid 1px;
+    padding: 0.5rem 1rem;
+    background-color: aquamarine;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.project-item {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    align-items: flex-start;
+    vertical-align: top;
+}
+
+.project-item img {
+    width: 280px;
+    height: 120px;
+    margin-bottom: 15px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.project-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background-image: url(images/website-background-design-guide-768x492.png);
+    background-size: cover;
+}   
+
+.mail-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: #333;
+}
+
+.mail-form input, .mail-form textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.mail-form input:focus, .mail-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.mail-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.mail-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.socials {
+    margin-top: 1rem;
+    display: flex;;
+    justify-content: center;
+}
+.socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+.socials a:hover {
+    color: #007bff;
+}
+.socials a:first-child {
+    margin-left: 0;
+}
+.socials a:last-child {
+    margin-right: 0;
+}
+
+.logos {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 8px;
 }
