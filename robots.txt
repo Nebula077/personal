@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: 
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://allannabule.vercel.app/sitemap.xml
