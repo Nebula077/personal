@@ -17,19 +17,18 @@ if (contactForm) {
         e.preventDefault();
         const status = document.getElementById('form-status');
         const formData = new FormData(contactForm);
-        formData.append('form-name', contactForm.getAttribute('name') || 'contact');
         if (status) status.textContent = 'Sending...';
         try {
-            const response = await fetch('/', {
+            const response = await fetch(contactForm.action, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams(formData).toString()
             });
             if (response.ok) {
-                if (status) status.textContent = 'Message sent — thanks!';
+                if (status) status.textContent = 'Message sent — thanks! You should receive a confirmation email shortly.';
                 contactForm.reset();
             } else {
-                if (status) status.textContent = 'There was a problem sending your message.';
+                if (status) status.textContent = 'There was a problem sending your message. Please try again.';
             }
         } catch (err) {
             if (status) status.textContent = 'Network error — please try again later.';

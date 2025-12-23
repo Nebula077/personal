@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Allan Nabule, a backend developer specializing in Python and Django. Explore my full-stack projects and web development skills.">
+    <meta name="keywords" content="Allan Nabule, backend developer, Python, Django, web development, full-stack developer, portfolio">
+    <meta name="author" content="Allan Nabule">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Allan Nabule - Backend Developer">
+    <meta property="og:description" content="Portfolio of Allan Nabule, a backend developer specializing in Python and Django.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
-    <title>Allan Nabule</title>
+    <title>Allan Nabule | Web Developer Portfolio</title>
 </head>
 <body>
     <div class="main">
@@ -61,13 +68,8 @@
             <div class="contact" id="contact">
                 <h2>Contact Me</h2>
                 <div class="mail-form">
-                    <!-- Netlify form: keep markup in the HTML so Netlify can detect it at build time -->
-                    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <!-- Hidden input for Netlify to identify the form -->
-                        <input type="hidden" name="form-name" value="contact">
-                        <!-- Honeypot field to reduce spam -->
-                        <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
-
+                    <!-- FormSubmit.co form - works without a backend -->
+                    <form id="contact-form" action="https://formsubmit.co/nabuleallan1@gmail.com" method="POST">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                         
@@ -76,6 +78,11 @@
                         
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" required></textarea>
+
+                        <!-- Optional: Honeypot for spam protection -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Redirect after submission -->
+                        <input type="hidden" name="_next" value="https://allannabule.vercel.app/#contact?success=true">
 
                         <button type="submit">Send</button>
                     </form>
